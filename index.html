@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uttam Yadav — Cyber Security Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<!-- ════════════════════════════════════════
+     NAVIGATION
+     ════════════════════════════════════════ -->
+<nav>
+  <div class="nav-logo" onclick="showPage('home')">UY_PORTFOLIO</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a onclick="showPage('home')"       data-page="home">HOME</a></li>
+    <li><a onclick="showPage('about')"      data-page="about">ABOUT</a></li>
+    <li><a onclick="showPage('skills')"     data-page="skills">SKILLS</a></li>
+    <li><a onclick="showPage('experience')" data-page="experience">EXPERIENCE</a></li>
+    <li><a onclick="showPage('projects')"   data-page="projects">PROJECTS</a></li>
+    <li><a onclick="showPage('certs')"      data-page="certs">CERTIFICATIONS</a></li>
+    <li><a onclick="showPage('contact')"    data-page="contact">CONTACT</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════
+     HOME
+     ════════════════════════════════════════ -->
+<div class="page" id="page-home">
+  <div class="hero" style="padding: 140px 10vw 80px;">
+    <p class="hero-tag">// BSc CYBER SECURITY · UEL 2027 · LONDON, UK</p>
+    <h1>
+      <span class="name-line">Uttam Yadav</span>
+      <span class="role-line">Cyber Risk · Governance · Cloud Security</span>
+    </h1>
+    <p class="hero-desc">
+      Cyber Security undergraduate with hands-on experience in SIEM analysis, MITRE ATT&CK threat classification,
+      IAM, and incident documentation. Deloitte simulation graduate. TryHackMe 80+ rooms completed.
+      Open to internships and placements from July 2026.
+    </p>
+    <div class="hero-cta">
+      <button class="btn btn-primary" onclick="showPage('projects')">VIEW PROJECTS</button>
+      <button class="btn btn-outline" onclick="showPage('contact')">GET IN TOUCH</button>
+    </div>
+    <div class="hero-status">
+      <span class="status-dot"></span>OPEN TO OPPORTUNITIES · AVAILABLE JULY 2026
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     ABOUT
+     ════════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="page-inner">
+    <p class="section-label">// ABOUT ME</p>
+    <h2>Who I Am</h2>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>I'm a Cyber Security undergraduate at the University of East London (BSc, graduating 2027), with a strong focus on cyber risk management, security governance, SIEM analysis, and incident documentation.</p>
+        <p>I've completed enterprise-level simulations with Deloitte Australia covering MITRE ATT&CK threat classification, IAM access control, log analysis, and stakeholder-ready reporting — building the foundations for roles in SOC, cloud security, and technology risk governance.</p>
+        <p>On TryHackMe I've completed 80+ rooms covering cloud and operational risk, incident tracking, network security, and structured vulnerability documentation — each sharpening my analytical instincts and real-world detection skills.</p>
+        <p>Alongside my studies I work in a high-pressure environment managing 20+ weekly working hours, coordinating with diverse teams, and consistently delivering under pressure — qualities directly transferable to Security Operations and Risk environments.</p>
+        <p>I'm open to Cyber Risk Internships, SOC Analyst Roles, Cloud Security Placements, and Technology Risk Graduate Programmes in London.</p>
+      </div>
+      <div>
+        <div class="info-item"><div class="info-label">LOCATION</div><div class="info-value">London, United Kingdom</div></div>
+        <div class="info-item"><div class="info-label">DEGREE</div><div class="info-value">BSc Cyber Security · UEL · 2027</div></div>
+        <div class="info-item"><div class="info-label">AVAILABILITY</div><div class="info-value">July 2026 onwards</div></div>
+        <div class="info-item"><div class="info-label">TRYHACKME</div><div class="info-value">80+ Rooms Completed</div></div>
+        <div class="info-item"><div class="info-label">EMAIL</div><div class="info-value">yadavuttam587@gmail.com</div></div>
+        <div class="info-item"><div class="info-label">PHONE</div><div class="info-value">07771 844 582</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     SKILLS
+     ════════════════════════════════════════ -->
+<div class="page" id="page-skills">
+  <div class="page-inner">
+    <p class="section-label">// TECHNICAL SKILLS</p>
+    <h2>Technical Arsenal</h2>
+    <div class="skills-grid reveal">
+      <div class="skill-card">
+        <div class="skill-card-icon">🛡️</div>
+        <h3>SECURITY OPERATIONS</h3>
+        <div class="skill-tags">
+          <span class="tag">SIEM</span><span class="tag">MITRE ATT&CK</span>
+          <span class="tag">Incident Response</span><span class="tag">Log Analysis</span>
+          <span class="tag">IAM</span><span class="tag">Threat Detection</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">🔍</div>
+        <h3>PENETRATION TESTING</h3>
+        <div class="skill-tags">
+          <span class="tag">Burp Suite</span><span class="tag">Nmap</span>
+          <span class="tag">Wireshark</span><span class="tag">Hashcat</span>
+          <span class="tag">Linux CLI</span><span class="tag">OSINT</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">💻</div>
+        <h3>PROGRAMMING & DATA</h3>
+        <div class="skill-tags">
+          <span class="tag">Python</span><span class="tag">SQL</span>
+          <span class="tag">Power BI</span><span class="tag">Excel</span>
+          <span class="tag">Bash</span><span class="tag">Scripting</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">☁️</div>
+        <h3>CLOUD & GOVERNANCE</h3>
+        <div class="skill-tags">
+          <span class="tag">Cloud Security</span><span class="tag">Risk Management</span>
+          <span class="tag">Governance</span><span class="tag">Compliance</span>
+          <span class="tag">Stakeholder Reporting</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">🔐</div>
+        <h3>NETWORK SECURITY</h3>
+        <div class="skill-tags">
+          <span class="tag">TCP/IP</span><span class="tag">OSI Model</span>
+          <span class="tag">DNS</span><span class="tag">Firewalls</span>
+          <span class="tag">VPN</span><span class="tag">Packet Analysis</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">🤝</div>
+        <h3>SOFT SKILLS</h3>
+        <div class="skill-tags">
+          <span class="tag">Stakeholder Comms</span><span class="tag">Team Collaboration</span>
+          <span class="tag">Attention to Detail</span><span class="tag">Time Management</span>
+          <span class="tag">Analytical Thinking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     EXPERIENCE
+     ════════════════════════════════════════ -->
+<div class="page" id="page-experience">
+  <div class="page-inner">
+    <p class="section-label">// EXPERIENCE & EDUCATION</p>
+    <h2>My Journey</h2>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-date">APR 2025 — PRESENT</div>
+        <div class="timeline-title">Crew Member</div>
+        <div class="timeline-org">Sides · London Area, United Kingdom</div>
+        <ul class="timeline-points">
+          <li>Maintained accuracy across 60–80+ daily orders in a high-pressure environment, demonstrating the attention to detail required for consolidating multi-stakeholder governance materials.</li>
+          <li>Identified process inefficiencies contributing to a 10–15% reduction in average wait times — reflecting an analytical, improvement-focused mindset.</li>
+          <li>Managed 20 weekly working hours alongside full-time cybersecurity studies and independent security training, evidencing strong task management and time discipline.</li>
+          <li>Coordinated within a diverse 8–12 person team, developing interpersonal and communication skills essential for cross-functional collaboration with technical and non-technical stakeholders.</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">JAN 2025 — MAY 2027</div>
+        <div class="timeline-title">BSc Cyber Security / Computer Forensics & Counterterrorism</div>
+        <div class="timeline-org">University of East London</div>
+        <ul class="timeline-points">
+          <li>Core modules covering network security, digital forensics, risk management, and cyber law.</li>
+          <li>Hands-on labs in ethical hacking, OSINT, vulnerability assessment, and incident response.</li>
+          <li>Active self-directed security research via TryHackMe (80+ rooms) alongside academic study.</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">APR 2021 — JUN 2023</div>
+        <div class="timeline-title">+2, Computer Science</div>
+        <div class="timeline-org">National Infotech Secondary School</div>
+        <ul class="timeline-points">
+          <li>Foundation in programming, networking fundamentals, and information systems.</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">EARLIER</div>
+        <div class="timeline-title">Secondary Education</div>
+        <div class="timeline-org">Shree Maisthan MA. VI School, Birgunj</div>
+        <ul class="timeline-points">
+          <li>Completed secondary education, building foundational academic skills.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     PROJECTS  (empty — add your projects here)
+     ════════════════════════════════════════ -->
+<div class="page" id="page-projects">
+  <div class="page-inner">
+    <p class="section-label">// PROJECTS</p>
+    <h2>My Projects</h2>
+
+    <div class="projects-grid reveal">
+
+      <!-- ── EMPTY STATE ── -->
+      <!-- Remove this block once you start adding project cards below -->
+      <div class="projects-empty">
+        <div class="projects-empty-icon">🚧</div>
+        <h3>PROJECTS COMING SOON</h3>
+        <p>
+          I'm currently building out this section with documented labs, CTF writeups,
+          Python security tools, and SIEM projects. Check back soon.
+        </p>
+        <span class="projects-coming-soon">⟳ IN PROGRESS</span>
+      </div>
+
+      <!-- ════════════════════════════════
+           HOW TO ADD A PROJECT CARD:
+           Copy the block below, paste it
+           above the empty state div,
+           and fill in your own details.
+           ════════════════════════════════
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon">🔐</div>
+          <div class="project-links">
+            <a href="#" class="project-link">GITHUB</a>
+            <a href="#" class="project-link">WRITEUP</a>
+          </div>
+        </div>
+        <div class="project-title">Your Project Name</div>
+        <p class="project-desc">
+          A short description of what the project does, what problem it solves,
+          and what you learned from building it.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">SIEM</span>
+          <span class="tag">Log Analysis</span>
+        </div>
+      </div>
+
+      -->
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     CERTIFICATIONS
+     ════════════════════════════════════════ -->
+<div class="page" id="page-certs">
+  <div class="page-inner">
+    <p class="section-label">// CERTIFICATIONS</p>
+    <h2>Certifications & Simulations</h2>
+    <div class="certs-grid reveal">
+      <div class="cert-card" onclick="showCertDetail('deloitte-cyber')">
+        <div class="cert-icon">🔐</div>
+        <div>
+          <div class="cert-name">Deloitte Australia — Cyber Job Simulation</div>
+          <div class="cert-issuer">DELOITTE · FORAGE PLATFORM</div>
+          <span class="cert-badge completed">✓ COMPLETED</span>
+        </div>
+      </div>
+      <div class="cert-card" onclick="showCertDetail('deloitte-data')">
+        <div class="cert-icon">📊</div>
+        <div>
+          <div class="cert-name">Deloitte Australia — Data Analytics Simulation</div>
+          <div class="cert-issuer">DELOITTE · FORAGE PLATFORM</div>
+          <span class="cert-badge completed">✓ COMPLETED</span>
+        </div>
+      </div>
+      <div class="cert-card" onclick="showCertDetail('thm-presec')">
+        <div class="cert-icon">🛡️</div>
+        <div>
+          <div class="cert-name">Pre Security Certificate</div>
+          <div class="cert-issuer">TRYHACKME · OCT 2025 – OCT 2028</div>
+          <span class="cert-badge completed">✓ COMPLETED</span>
+        </div>
+      </div>
+      <div class="cert-card" onclick="showCertDetail('python')">
+        <div class="cert-icon">🐍</div>
+        <div>
+          <div class="cert-name">Python Essentials 1</div>
+          <div class="cert-issuer">CISCO NETWORKING ACADEMY</div>
+          <span class="cert-badge completed">✓ COMPLETED</span>
+        </div>
+      </div>
+      <div class="cert-card" onclick="showCertDetail('isc2')">
+        <div class="cert-icon">⏳</div>
+        <div>
+          <div class="cert-name">ISC2 CC — Certified in Cybersecurity</div>
+          <div class="cert-issuer">ISC2</div>
+          <span class="cert-badge progress">⟳ IN PROGRESS</span>
+        </div>
+      </div>
+      <div class="cert-card" onclick="showCertDetail('thm-rooms')">
+        <div class="cert-icon">🎯</div>
+        <div>
+          <div class="cert-name">TryHackMe — 80+ Rooms Completed</div>
+          <div class="cert-issuer">TRYHACKME · ONGOING</div>
+          <span class="cert-badge completed">✓ ACTIVE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     CERT DETAIL — DELOITTE CYBER
+     ════════════════════════════════════════ -->
+<div class="page" id="page-cert-deloitte-cyber">
+  <div class="page-inner">
+    <button class="back-btn" onclick="showPage('certs')">← BACK TO CERTIFICATIONS</button>
+    <div class="cert-detail-header">
+      <div class="cert-detail-icon">🔐</div>
+      <div class="cert-detail-meta">
+        <h1>Deloitte Australia — Cyber Job Simulation</h1>
+        <div class="cert-issuer" style="font-family:var(--mono);font-size:0.72rem;color:var(--muted);margin-bottom:10px;">DELOITTE AUSTRALIA · FORAGE PLATFORM · 30–60 MINS · INTRODUCTORY</div>
+        <span class="cert-badge completed">✓ COMPLETED</span>
+      </div>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// OVERVIEW</h3>
+      <p>This simulation was built from real work done by Deloitte Australia's cyber team. It placed me in the role of a junior cybersecurity consultant working on a client engagement — a manufacturing company called Daikibo — investigating a potential data breach and performing security analysis.</p>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// TASKS COMPLETED</h3>
+      <div class="task-list">
+        <div class="task-item"><div class="task-num">01</div><div class="task-content"><h4>Breach Investigation — Log Analysis</h4><p>Analysed a web_requests.log file during the suspected attack window. Identified suspicious API requests at precise automated intervals. Traced activity to an internal user ID performing machine-like data scraping.</p></div></div>
+        <div class="task-item"><div class="task-num">02</div><div class="task-content"><h4>VPN & Access Control Assessment</h4><p>Determined whether the breach could have originated externally without VPN access. Concluded the threat was an insider or compromised internal account.</p></div></div>
+        <div class="task-item"><div class="task-num">03</div><div class="task-content"><h4>MITRE ATT&CK Threat Classification</h4><p>Classified the identified attack patterns against the MITRE ATT&CK framework, mapping techniques, tactics, and procedures for stakeholder review.</p></div></div>
+        <div class="task-item"><div class="task-num">04</div><div class="task-content"><h4>Stakeholder-Ready Reporting</h4><p>Produced a professional incident report including risk impact, indicators of compromise, and recommended remediation steps.</p></div></div>
+      </div>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// SKILLS DEMONSTRATED</h3>
+      <div class="skill-pill-group">
+        <span class="skill-pill">Log Analysis</span><span class="skill-pill">MITRE ATT&CK</span>
+        <span class="skill-pill">Incident Response</span><span class="skill-pill">IAM</span>
+        <span class="skill-pill">Threat Classification</span><span class="skill-pill">Blue Team</span>
+        <span class="skill-pill">Stakeholder Reporting</span><span class="skill-pill">Insider Threat Detection</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     CERT DETAIL — DELOITTE DATA
+     ════════════════════════════════════════ -->
+<div class="page" id="page-cert-deloitte-data">
+  <div class="page-inner">
+    <button class="back-btn" onclick="showPage('certs')">← BACK TO CERTIFICATIONS</button>
+    <div class="cert-detail-header">
+      <div class="cert-detail-icon">📊</div>
+      <div class="cert-detail-meta">
+        <h1>Deloitte Australia — Data Analytics Job Simulation</h1>
+        <div class="cert-issuer" style="font-family:var(--mono);font-size:0.72rem;color:var(--muted);margin-bottom:10px;">DELOITTE AUSTRALIA · FORAGE PLATFORM · 1–2 HOURS · INTERMEDIATE</div>
+        <span class="cert-badge completed">✓ COMPLETED</span>
+      </div>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// OVERVIEW</h3>
+      <p>Placed in Deloitte's forensic data analytics team, working on factory telemetry analysis and gender pay equality classification — built from Deloitte's actual client delivery methodology.</p>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// TASKS COMPLETED</h3>
+      <div class="task-list">
+        <div class="task-item"><div class="task-num">01</div><div class="task-content"><h4>Machine Downtime Visualisation — Tableau Dashboard</h4><p>Imported and processed Daikibo factory telemetry data (JSON) in Tableau. Built interactive dashboards comparing downtime across factories — identifying Daikibo Berlin as the highest-efficiency site.</p></div></div>
+        <div class="task-item"><div class="task-num">02</div><div class="task-content"><h4>Gender Pay Equality Classification — Excel</h4><p>Generated classification logic to categorise pay equality levels across the organisation, producing actionable insights for stakeholder reporting.</p></div></div>
+      </div>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// SKILLS DEMONSTRATED</h3>
+      <div class="skill-pill-group">
+        <span class="skill-pill">Tableau</span><span class="skill-pill">Excel</span>
+        <span class="skill-pill">Data Classification</span><span class="skill-pill">JSON Processing</span>
+        <span class="skill-pill">Data Visualisation</span><span class="skill-pill">Forensic Analytics</span>
+        <span class="skill-pill">Governance Reporting</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     CERT DETAIL — THM PRE SECURITY
+     ════════════════════════════════════════ -->
+<div class="page" id="page-cert-thm-presec">
+  <div class="page-inner">
+    <button class="back-btn" onclick="showPage('certs')">← BACK TO CERTIFICATIONS</button>
+    <div class="cert-detail-header">
+      <div class="cert-detail-icon">🛡️</div>
+      <div class="cert-detail-meta">
+        <h1>TryHackMe — Pre Security Certificate</h1>
+        <div class="cert-issuer" style="font-family:var(--mono);font-size:0.72rem;color:var(--muted);margin-bottom:10px;">TRYHACKME · VALID OCT 2025 – OCT 2028 · 15 ROOMS · ~40 HOURS</div>
+        <span class="cert-badge completed">✓ COMPLETED</span>
+      </div>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// MODULES COMPLETED</h3>
+      <div class="task-list">
+        <div class="task-item"><div class="task-num">01</div><div class="task-content"><h4>Cyber Security Introduction</h4><p>Real-world breach scenarios, attack surfaces, and how hackers think.</p></div></div>
+        <div class="task-item"><div class="task-num">02</div><div class="task-content"><h4>Network Fundamentals (5 rooms)</h4><p>IP, MAC, LAN topologies, ARP, DHCP, subnetting, OSI model, TCP/IP, packet analysis.</p></div></div>
+        <div class="task-item"><div class="task-num">03</div><div class="task-content"><h4>How The Web Works (4 rooms)</h4><p>DNS, HTTP/HTTPS, cookies, load balancers, CDNs, WAFs.</p></div></div>
+        <div class="task-item"><div class="task-num">04</div><div class="task-content"><h4>Linux Fundamentals (3 rooms)</h4><p>CLI, file permissions, SSH, process management, cron jobs.</p></div></div>
+        <div class="task-item"><div class="task-num">05</div><div class="task-content"><h4>Windows Fundamentals (2 rooms)</h4><p>Active Directory basics, registry, Task Manager, Windows Defender.</p></div></div>
+      </div>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// SKILLS DEMONSTRATED</h3>
+      <div class="skill-pill-group">
+        <span class="skill-pill">Networking</span><span class="skill-pill">Linux CLI</span>
+        <span class="skill-pill">DNS</span><span class="skill-pill">HTTP/HTTPS</span>
+        <span class="skill-pill">TCP/IP</span><span class="skill-pill">OSI Model</span>
+        <span class="skill-pill">Windows Security</span><span class="skill-pill">Web Infrastructure</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     CERT DETAIL — PYTHON
+     ════════════════════════════════════════ -->
+<div class="page" id="page-cert-python">
+  <div class="page-inner">
+    <button class="back-btn" onclick="showPage('certs')">← BACK TO CERTIFICATIONS</button>
+    <div class="cert-detail-header">
+      <div class="cert-detail-icon">🐍</div>
+      <div class="cert-detail-meta">
+        <h1>Python Essentials 1</h1>
+        <div class="cert-issuer" style="font-family:var(--mono);font-size:0.72rem;color:var(--muted);margin-bottom:10px;">CISCO NETWORKING ACADEMY × OPENEDG PYTHON INSTITUTE · ~30 HOURS</div>
+        <span class="cert-badge completed">✓ COMPLETED</span>
+      </div>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// COURSE CONTENT</h3>
+      <div class="task-list">
+        <div class="task-item"><div class="task-num">01</div><div class="task-content"><h4>Programming Fundamentals</h4><p>Algorithmic thinking — decomposing problems, pattern recognition, abstraction.</p></div></div>
+        <div class="task-item"><div class="task-num">02</div><div class="task-content"><h4>Python Syntax & Data Types</h4><p>Variables, operators, input/output functions, type conversion, and string operations.</p></div></div>
+        <div class="task-item"><div class="task-num">03</div><div class="task-content"><h4>Control Flow & Loops</h4><p>if/elif/else, for/while loops, break/continue/pass.</p></div></div>
+        <div class="task-item"><div class="task-num">04</div><div class="task-content"><h4>Functions & Modules</h4><p>Defining functions, parameters, return values, Python Standard Library.</p></div></div>
+        <div class="task-item"><div class="task-num">05</div><div class="task-content"><h4>Data Structures & File Handling</h4><p>Lists, tuples, dicts, sets. Reading/writing files — directly applicable to log parsing.</p></div></div>
+      </div>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// SKILLS DEMONSTRATED</h3>
+      <div class="skill-pill-group">
+        <span class="skill-pill">Python</span><span class="skill-pill">Scripting</span>
+        <span class="skill-pill">Algorithmic Thinking</span><span class="skill-pill">Data Structures</span>
+        <span class="skill-pill">File Processing</span><span class="skill-pill">Automation</span>
+        <span class="skill-pill">Problem Solving</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     CERT DETAIL — ISC2
+     ════════════════════════════════════════ -->
+<div class="page" id="page-cert-isc2">
+  <div class="page-inner">
+    <button class="back-btn" onclick="showPage('certs')">← BACK TO CERTIFICATIONS</button>
+    <div class="cert-detail-header">
+      <div class="cert-detail-icon">⏳</div>
+      <div class="cert-detail-meta">
+        <h1>ISC2 CC — Certified in Cybersecurity</h1>
+        <div class="cert-issuer" style="font-family:var(--mono);font-size:0.72rem;color:var(--muted);margin-bottom:10px;">ISC2 — INTERNATIONAL INFORMATION SYSTEM SECURITY CERTIFICATION CONSORTIUM</div>
+        <span class="cert-badge progress">⟳ IN PROGRESS</span>
+      </div>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// DOMAINS BEING STUDIED</h3>
+      <div class="task-list">
+        <div class="task-item"><div class="task-num">01</div><div class="task-content"><h4>Security Principles</h4><p>CIA Triad, risk management fundamentals, security governance frameworks.</p></div></div>
+        <div class="task-item"><div class="task-num">02</div><div class="task-content"><h4>Business Continuity, DR & Incident Response</h4><p>BC/DR planning, full incident response lifecycle.</p></div></div>
+        <div class="task-item"><div class="task-num">03</div><div class="task-content"><h4>Access Controls Concepts</h4><p>Physical and logical access controls, IAM, authentication, least privilege.</p></div></div>
+        <div class="task-item"><div class="task-num">04</div><div class="task-content"><h4>Network Security</h4><p>Network threats, OSI model, TCP/IP, firewall types, VPNs, wireless security.</p></div></div>
+        <div class="task-item"><div class="task-num">05</div><div class="task-content"><h4>Security Operations</h4><p>System hardening, patch management, configuration management.</p></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     CERT DETAIL — THM ROOMS
+     ════════════════════════════════════════ -->
+<div class="page" id="page-cert-thm-rooms">
+  <div class="page-inner">
+    <button class="back-btn" onclick="showPage('certs')">← BACK TO CERTIFICATIONS</button>
+    <div class="cert-detail-header">
+      <div class="cert-detail-icon">🎯</div>
+      <div class="cert-detail-meta">
+        <h1>TryHackMe — 80+ Rooms Completed</h1>
+        <div class="cert-issuer" style="font-family:var(--mono);font-size:0.72rem;color:var(--muted);margin-bottom:10px;">TRYHACKME · ONGOING SELF-DIRECTED TRAINING</div>
+        <span class="cert-badge completed">✓ ACTIVE</span>
+      </div>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// AREAS COVERED</h3>
+      <div class="task-list">
+        <div class="task-item"><div class="task-num">▸</div><div class="task-content"><h4>Network Security & Traffic Analysis</h4><p>Wireshark, Nmap, network enumeration, firewall bypass techniques.</p></div></div>
+        <div class="task-item"><div class="task-num">▸</div><div class="task-content"><h4>Cloud & Operational Risk</h4><p>Cloud security fundamentals, misconfiguration risks, identity-based attacks.</p></div></div>
+        <div class="task-item"><div class="task-num">▸</div><div class="task-content"><h4>Incident Tracking & Vulnerability Documentation</h4><p>Structured documentation, incident chronologies, evidence collection.</p></div></div>
+        <div class="task-item"><div class="task-num">▸</div><div class="task-content"><h4>Web Application Security</h4><p>OWASP Top 10, SQL injection, XSS, Burp Suite.</p></div></div>
+        <div class="task-item"><div class="task-num">▸</div><div class="task-content"><h4>CTF Challenges & Offensive Security</h4><p>Multi-step exploitation, privilege escalation, lateral movement.</p></div></div>
+      </div>
+    </div>
+    <div class="cert-section reveal">
+      <h3>// SKILLS DEMONSTRATED</h3>
+      <div class="skill-pill-group">
+        <span class="skill-pill">Nmap</span><span class="skill-pill">Wireshark</span>
+        <span class="skill-pill">Burp Suite</span><span class="skill-pill">Hashcat</span>
+        <span class="skill-pill">Linux</span><span class="skill-pill">Web App Security</span>
+        <span class="skill-pill">Cloud Security</span><span class="skill-pill">Incident Tracking</span>
+        <span class="skill-pill">CTF</span><span class="skill-pill">OSINT</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     CONTACT
+     ════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="page-inner">
+    <p class="section-label">// CONTACT</p>
+    <h2>Let's Connect</h2>
+    <div class="contact-wrapper reveal">
+      <p class="contact-desc">
+        I'm actively looking for Cyber Risk Internships, SOC Analyst roles, Cloud Security Placements,
+        and Technology Risk Graduate Programmes. Available from July 2026. Based in London, UK.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:yadavuttam587@gmail.com" class="contact-link">
+          <div class="contact-link-icon">✉️</div>
+          <div><div class="contact-link-label">EMAIL</div><div class="contact-link-value">yadavuttam587@gmail.com</div></div>
+        </a>
+        <a href="tel:07771844582" class="contact-link">
+          <div class="contact-link-icon">📞</div>
+          <div><div class="contact-link-label">PHONE</div><div class="contact-link-value">07771 844 582</div></div>
+        </a>
+        <a href="https://www.linkedin.com/in/uttam-yadava38200237" target="_blank" class="contact-link">
+          <div class="contact-link-icon">💼</div>
+          <div><div class="contact-link-label">LINKEDIN</div><div class="contact-link-value">linkedin.com/in/uttam-yadava38200237</div></div>
+        </a>
+        <a href="https://tryhackme.com" target="_blank" class="contact-link">
+          <div class="contact-link-icon">🎯</div>
+          <div><div class="contact-link-label">TRYHACKME</div><div class="contact-link-value">80+ Rooms Completed · Active Profile</div></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Load JS last ── -->
+<script src="main.js"></script>
+
+</body>
+</html>
