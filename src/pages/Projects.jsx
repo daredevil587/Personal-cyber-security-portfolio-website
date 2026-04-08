@@ -31,7 +31,7 @@ export default function Projects({ navigate }) {
       </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-        className="text-4xl font-black text-[#e2e0ff] mb-10"
+        className="text-4xl font-black text-[#e6edf3] mb-10"
       >
         My Projects
       </motion.h2>
@@ -51,7 +51,7 @@ export default function Projects({ navigate }) {
               </span>
             </div>
 
-            <h3 className="font-bold text-[#e2e0ff] mb-3 text-lg leading-tight">{proj.title}</h3>
+            <h3 className="font-bold text-[#e6edf3] mb-3 text-lg leading-tight">{proj.title}</h3>
             <p className="text-sm text-[#8b949e] leading-relaxed mb-4 flex-1">{proj.desc}</p>
 
             <div className="flex flex-wrap gap-1.5 mb-5">

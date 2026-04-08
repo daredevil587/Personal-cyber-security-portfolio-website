@@ -19,7 +19,7 @@ export default function Contact() {
       </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-        className="text-4xl font-black text-[#e2e0ff] mb-4"
+        className="text-4xl font-black text-[#e6edf3] mb-4"
       >
         Let's Connect
       </motion.h2>
@@ -47,7 +47,7 @@ export default function Contact() {
             </div>
             <div>
               <p className="font-mono text-xs text-[#4b5563] tracking-wider">{link.label}</p>
-              <p className="text-sm text-[#e2e0ff]">{link.value}</p>
+              <p className="text-sm text-[#e6edf3]">{link.value}</p>
             </div>
           </motion.a>
         ))}

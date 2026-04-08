@@ -58,7 +58,7 @@ export default function Experience() {
       </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-        className="text-4xl font-black text-[#e2e0ff] mb-12"
+        className="text-4xl font-black text-[#e6edf3] mb-12"
       >
         My Journey
       </motion.h2>
@@ -79,7 +79,7 @@ export default function Experience() {
 
               <div className="p-5 rounded-xl border border-[#0e1f35] bg-[#0d1423] hover:border-blue-500/30 transition-colors">
                 <div className="flex flex-wrap items-start justify-between gap-2 mb-1">
-                  <h3 className="font-bold text-[#e2e0ff]">{item.title}</h3>
+                  <h3 className="font-bold text-[#e6edf3]">{item.title}</h3>
                   <span className="font-mono text-xs text-blue-400 shrink-0">{item.date}</span>
                 </div>
                 <p className="font-mono text-xs text-[#4b5563] mb-3">{item.org}</p>

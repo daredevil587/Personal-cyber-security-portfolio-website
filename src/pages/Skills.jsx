@@ -49,7 +49,7 @@ export default function Skills() {
       </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-        className="text-4xl font-black text-[#e2e0ff] mb-10"
+        className="text-4xl font-black text-[#e6edf3] mb-10"
       >
         Technical Arsenal
       </motion.h2>

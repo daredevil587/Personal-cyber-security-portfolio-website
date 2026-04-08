@@ -20,7 +20,7 @@ export default function About() {
       </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-        className="text-4xl font-black text-[#e2e0ff] mb-10"
+        className="text-4xl font-black text-[#e6edf3] mb-10"
       >
         Who I Am
       </motion.h2>
@@ -49,7 +49,7 @@ export default function About() {
               className="flex items-start gap-4 p-4 rounded-lg border border-[#0e1f35] bg-[#0d1423] hover:border-blue-500/30 transition-colors"
             >
               <span className="font-mono text-xs text-blue-400 tracking-widest w-28 shrink-0 mt-0.5">{item.label}</span>
-              <span className="text-[#e2e0ff] text-sm">{item.value}</span>
+              <span className="text-[#e6edf3] text-sm">{item.value}</span>
             </motion.div>
           ))}
         </motion.div>

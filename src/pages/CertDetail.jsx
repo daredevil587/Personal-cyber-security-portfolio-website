@@ -158,7 +158,7 @@ export default function CertDetail({ certId, navigate }) {
       >
         <span className="text-5xl">{cert.icon}</span>
         <div>
-          <h1 className="text-3xl font-black text-[#e2e0ff] mb-1">{cert.title}</h1>
+          <h1 className="text-3xl font-black text-[#e6edf3] mb-1">{cert.title}</h1>
           <p className="font-mono text-xs text-[#4b5563] mb-3">{cert.meta}</p>
           <span className={`font-mono text-xs px-2 py-1 rounded border ${badge[cert.status]}`}>
             {badgeLabel[cert.status]}
@@ -190,7 +190,7 @@ export default function CertDetail({ certId, navigate }) {
             >
               <span className="font-mono text-sm text-blue-400 w-8 shrink-0">{task.num}</span>
               <div>
-                <h4 className="font-semibold text-[#e2e0ff] mb-1">{task.title}</h4>
+                <h4 className="font-semibold text-[#e6edf3] mb-1">{task.title}</h4>
                 <p className="text-sm text-[#8b949e]">{task.desc}</p>
               </div>
             </motion.div>

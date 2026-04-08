@@ -29,7 +29,7 @@ export default function Certifications({ navigate }) {
       </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-        className="text-4xl font-black text-[#e2e0ff] mb-10"
+        className="text-4xl font-black text-[#e6edf3] mb-10"
       >
         Certifications & Simulations
       </motion.h2>
@@ -45,7 +45,7 @@ export default function Certifications({ navigate }) {
           >
             <span className="text-3xl">{cert.icon}</span>
             <div className="min-w-0">
-              <p className="font-semibold text-[#e2e0ff] text-sm leading-snug mb-1">{cert.name}</p>
+              <p className="font-semibold text-[#e6edf3] text-sm leading-snug mb-1">{cert.name}</p>
               <p className="font-mono text-xs text-[#4b5563] mb-2 truncate">{cert.issuer}</p>
               <span className={`inline-block font-mono text-xs px-2 py-0.5 rounded border ${badge[cert.status]}`}>
                 {badgeLabel[cert.status]}
