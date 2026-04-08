@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+*.local
+.claude/
+pr.jpg
+pr1.jpg
+pr2.jpg
+pr3.jpg
+pr4.jpg
+pr5.jpg
+USED 1.avif
