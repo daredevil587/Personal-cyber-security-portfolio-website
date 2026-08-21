@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
-import { ExternalLink, FileText } from 'lucide-react'
+import { ExternalLink, FileText, ShieldCheck } from 'lucide-react'
 
 const projects = [
   {
     icon: '🤖',
     title: 'AI-Powered SOC Phishing Detection Dashboard',
-    desc: 'Built a real-time phishing detection system combining rule-based threat logic with a TF-IDF + Logistic Regression ML model. Analyses email content, calculates risk scores, and outputs SOC-style threat classification (Low / Suspicious / High Risk). Features a recruiter demo mode, phishing probability gauge, rule vs ML score comparison, and downloadable CSV reports — deployed via Streamlit.',
+    desc: 'Built and deployed a phishing triage application that combines explainable rule-based checks with a TF-IDF and Logistic Regression model. It analyses email content and returns a clear Low, Suspicious, or High Risk classification for SOC-style review.',
+    outcome: 'Includes a recruiter demo, phishing-probability gauge, rule-versus-ML comparison, risk scoring, and downloadable CSV reports.',
     tags: ['Python', 'Machine Learning', 'Streamlit', 'TF-IDF', 'SOC', 'Threat Detection', 'Cloud Deployment'],
     liveUrl: 'https://ai-soc-phishing-detector-3mgsv6jggmpcvfzbrpxdhu.streamlit.app/',
     status: 'LIVE',
@@ -13,12 +14,28 @@ const projects = [
   {
     icon: '🕷️',
     title: 'Web App Exploitation — Path Traversal Labs',
-    desc: 'Solved 4 progressive file path traversal labs on PortSwigger Web Security Academy using Burp Suite Proxy and Repeater. Techniques covered: basic ../  traversal, absolute path bypass, non-recursive stripping bypass (nested payloads), and double URL-encoding evasion. Each lab required understanding how the server-side filter fails before crafting the correct bypass payload.',
+    desc: 'Completed four progressive PortSwigger Web Security Academy labs using Burp Suite Proxy and Repeater. Tested basic traversal, absolute-path bypass, nested payloads against non-recursive filters, and double URL-encoding evasion.',
+    outcome: 'Captured the vulnerable server-side behaviour and payload logic in a portfolio write-up that makes the testing process easy to review.',
     tags: ['Burp Suite', 'Path Traversal', 'Filter Bypass', 'URL Encoding', 'Web App Security', 'OWASP', 'Manual Exploitation'],
     writeupPage: true,
-    status: 'IN PROGRESS',
+    status: 'LAB SERIES',
+  },
+  {
+    icon: '🛡️',
+    title: 'Cybersecurity Analyst Job Simulations',
+    desc: 'Completed employer-designed simulations from AIG and Deloitte Australia through Forage, working through ransomware response, threat classification, IAM, log analysis, vulnerability research, and stakeholder reporting scenarios.',
+    outcome: 'Converted technical findings into concise, decision-ready recommendations while practising structured incident and risk documentation.',
+    tags: ['MITRE ATT&CK', 'Incident Response', 'IAM', 'Log Analysis', 'Risk Reporting', 'Forage'],
+    navigateTo: 'certs',
+    status: 'COMPLETED',
   },
 ]
+
+const statusStyle = {
+  LIVE: 'text-green-400 border-green-500/30 bg-green-500/10',
+  COMPLETED: 'text-green-400 border-green-500/30 bg-green-500/10',
+  'LAB SERIES': 'text-amber-400 border-amber-500/30 bg-amber-500/10',
+}
 
 export default function Projects({ navigate }) {
   return (
@@ -31,12 +48,19 @@ export default function Projects({ navigate }) {
       </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-        className="text-4xl font-black text-[#e6edf3] mb-10"
+        className="text-4xl font-black text-[#e6edf3] mb-4"
       >
-        My Projects
+        Selected Security Work
       </motion.h2>
 
-      <div className="grid lg:grid-cols-2 gap-6">
+      <motion.p
+        initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.15 }}
+        className="max-w-3xl text-sm text-[#8b949e] leading-relaxed mb-8"
+      >
+        Practical work across phishing detection, web application security, incident response, and technology risk — with clear evidence of what I built, tested, and learned.
+      </motion.p>
+
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
         {projects.map((proj, i) => (
           <motion.div
             key={proj.title}
@@ -46,13 +70,16 @@ export default function Projects({ navigate }) {
           >
             <div className="flex items-start justify-between mb-4">
               <span className="text-4xl">{proj.icon}</span>
-              <span className={`font-mono text-xs px-2 py-1 rounded border ${proj.status === 'LIVE' ? 'text-green-400 border-green-500/30 bg-green-500/10' : 'text-amber-400 border-amber-500/30 bg-amber-500/10'}`}>
+              <span className={`font-mono text-xs px-2 py-1 rounded border ${statusStyle[proj.status]}`}>
                 {proj.status}
               </span>
             </div>
 
             <h3 className="font-bold text-[#e6edf3] mb-3 text-lg leading-tight">{proj.title}</h3>
-            <p className="text-sm text-[#8b949e] leading-relaxed mb-4 flex-1">{proj.desc}</p>
+            <p className="text-sm text-[#8b949e] leading-relaxed mb-3">{proj.desc}</p>
+            <p className="text-sm text-[#b5c0cf] leading-relaxed mb-4 flex-1">
+              <span className="font-mono text-xs text-blue-400">OUTCOME — </span>{proj.outcome}
+            </p>
 
             <div className="flex flex-wrap gap-1.5 mb-5">
               {proj.tags.map(tag => (
@@ -76,6 +103,13 @@ export default function Projects({ navigate }) {
                   <FileText size={13} /> WRITEUP
                 </button>
               )}
+              {proj.navigateTo && (
+                <button
+                  onClick={() => navigate(proj.navigateTo)}
+                  className="flex items-center gap-2 px-4 py-2 border border-blue-500/30 hover:border-blue-400 text-blue-300 font-mono text-xs rounded transition-all">
+                  <ShieldCheck size={13} /> VIEW CREDENTIALS
+                </button>
+              )}
             </div>
           </motion.div>
         ))}
@@ -85,7 +119,7 @@ export default function Projects({ navigate }) {
         initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
         className="mt-10 p-5 rounded-xl border border-dashed border-[#0e1f35] text-center"
       >
-        <p className="font-mono text-xs text-[#4b5563] tracking-wider">MORE PROJECTS COMING — CTF WRITEUPS · SIEM LAB · PYTHON SECURITY TOOLS</p>
+        <p className="font-mono text-xs text-[#4b5563] tracking-wider">BUILDING NEXT — SIEM INVESTIGATION LAB · PYTHON SECURITY AUTOMATION · CTF WRITEUPS</p>
       </motion.div>
     </div>
   )

@@ -293,7 +293,7 @@ export default function Home({ navigate }) {
 
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
             className="text-[#8b949e] text-sm mb-1">
-            A Student who is becoming a
+            A cybersecurity student building towards a
           </motion.p>
 
           {/* TYPING ANIMATION */}
@@ -304,10 +304,9 @@ export default function Home({ navigate }) {
 
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45 }}
             className="text-[#6e7681] text-sm leading-relaxed mb-8">
-            Currently studying at{' '}
-            <span className="text-blue-400 font-semibold">University of East London</span>.
-            Hands-on in SIEM, MITRE ATT&CK, Burp Suite, and PortSwigger web exploitation labs.
-            TryHackMe 80+ rooms. Open to internships from July 2026.
+            BSc (Hons) Cyber Security student at{' '}
+            <span className="text-blue-400 font-semibold">University of East London</span>,
+            building practical experience across phishing detection, SOC analysis, web security, Python, and cloud security.
           </motion.p>
 
           {/* CTA BUTTONS */}
@@ -332,7 +331,7 @@ export default function Home({ navigate }) {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7 }}
             className="flex items-center gap-2 font-mono text-xs text-green-400">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse shadow-sm shadow-green-400/60" />
-            OPEN TO OPPORTUNITIES · AVAILABLE JULY 2026
+            OPEN TO CYBERSECURITY OPPORTUNITIES · AVAILABLE NOW
           </motion.div>
         </div>
       </div>
@@ -350,7 +349,7 @@ export default function Home({ navigate }) {
               { icon: '🎯', value: '80+', label: 'TryHackMe Rooms' },
               { icon: '🕷️', value: '4',   label: 'PortSwigger Labs' },
               { icon: '🏢', value: '3',   label: 'Job Simulations' },
-              { icon: '📅', value: 'Jul 2026', label: 'Available From' },
+              { icon: '🎓', value: '2027', label: 'Expected Graduation' },
             ].map((s, i) => (
               <motion.div key={s.label}
                 initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}

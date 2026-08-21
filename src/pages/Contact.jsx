@@ -4,7 +4,7 @@ import { Mail, Phone, Linkedin, Target, Download } from 'lucide-react'
 const links = [
   { icon: Mail, label: 'EMAIL', value: 'yadavuttam587@gmail.com', href: 'mailto:yadavuttam587@gmail.com' },
   { icon: Phone, label: 'PHONE', value: '07771 844 582', href: 'tel:07771844582' },
-  { icon: Linkedin, label: 'LINKEDIN', value: 'linkedin.com/in/uttam-yadava38200237', href: 'https://www.linkedin.com/in/uttam-yadava38200237' },
+  { icon: Linkedin, label: 'LINKEDIN', value: 'linkedin.com/in/uttam-yadav-a38200237', href: 'https://www.linkedin.com/in/uttam-yadav-a38200237' },
   { icon: Target, label: 'TRYHACKME', value: '80+ Rooms Completed · Active Profile', href: 'https://tryhackme.com/p/yadavuttam5788' },
 ]
 
@@ -28,7 +28,7 @@ export default function Contact() {
         initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
         className="text-[#8b949e] mb-10 max-w-xl"
       >
-        I'm actively looking for Cyber Risk Internships, SOC Analyst roles, Cloud Security Placements, and Technology Risk Graduate Programmes. Available from July 2026. Based in London, UK.
+        I'm actively looking for SOC, cyber risk, cloud security, and technology risk opportunities. Available now and based in London, UK.
       </motion.p>
 
       <div className="grid sm:grid-cols-2 gap-4 mb-8">

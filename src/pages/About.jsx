@@ -2,8 +2,8 @@ import { motion } from 'framer-motion'
 
 const info = [
   { label: 'LOCATION', value: 'London, United Kingdom' },
-  { label: 'DEGREE', value: 'BSc Cyber Security · UEL · 2027' },
-  { label: 'AVAILABILITY', value: 'July 2026 onwards' },
+  { label: 'DEGREE', value: 'BSc (Hons) Cyber Security · UEL · 2027' },
+  { label: 'AVAILABILITY', value: 'Open to opportunities' },
   { label: 'TRYHACKME', value: '80+ Rooms Completed' },
   { label: 'EMAIL', value: 'yadavuttam587@gmail.com' },
   { label: 'PHONE', value: '07771 844 582' },
@@ -30,12 +30,13 @@ export default function About() {
           initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
           className="space-y-4 text-[#8b949e] leading-relaxed"
         >
-          <p>I'm a Cyber Security undergraduate at the University of East London (BSc, graduating 2027), with a strong focus on cyber risk management, security governance, SIEM analysis, and incident documentation.</p>
-          <p>I've completed enterprise-level simulations with Deloitte Australia and AIG covering MITRE ATT&CK threat classification, IAM access control, log analysis, ransomware vulnerability research, and stakeholder-ready reporting.</p>
+          <p>I'm a BSc (Hons) Cyber Security undergraduate at the University of East London, graduating in 2027. My studies cover network security, ethical hacking, secure software development, operating systems, risk management, and compliance frameworks.</p>
+          <p>I build practical security projects, including a deployed AI-powered phishing detection dashboard that combines rule-based analysis with machine learning for SOC-style email triage.</p>
+          <p>I've completed employer-designed simulations with Deloitte Australia and AIG covering MITRE ATT&CK threat classification, IAM access control, log analysis, ransomware vulnerability research, and stakeholder-ready reporting.</p>
           <p>On TryHackMe I've completed 80+ rooms covering cloud and operational risk, incident tracking, network security, and structured vulnerability documentation — each sharpening my analytical instincts.</p>
           <p>I'm actively working through PortSwigger Web Security Academy labs, focusing on web application exploitation. I've solved multiple file path traversal labs using Burp Suite — including absolute path bypass, non-recursive stripping bypass, and URL-encoding evasion.</p>
-          <p>Alongside my studies I work in high-pressure hospitality environments, coordinating with diverse teams and consistently delivering under pressure — qualities directly transferable to Security Operations.</p>
-          <p>I'm open to Cyber Risk Internships, SOC Analyst Roles, Cloud Security Placements, and Technology Risk Graduate Programmes in London.</p>
+          <p>Alongside my studies, I work in high-pressure hospitality environments where I have strengthened my communication, prioritisation, reliability, and ability to stay calm when demands change quickly.</p>
+          <p>I'm open to SOC, cyber risk, cloud security, and technology risk opportunities in London where I can contribute, keep learning, and grow into a dependable security professional.</p>
         </motion.div>
 
         <motion.div
