@@ -9,13 +9,32 @@ import Certifications from './pages/Certifications'
 import Contact from './pages/Contact'
 import CertDetail from './pages/CertDetail'
 
+function readRoute() {
+  const [page = 'home', certId = null] = window.location.hash.replace(/^#\/?/, '').split('/')
+  return { page: page || 'home', certId }
+}
+
 export default function App() {
-  const [page, setPage] = useState('home')
-  const [certId, setCertId] = useState(null)
+  const initialRoute = readRoute()
+  const [page, setPage] = useState(initialRoute.page)
+  const [certId, setCertId] = useState(initialRoute.certId)
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const route = readRoute()
+      setPage(route.page)
+      setCertId(route.certId)
+      window.scrollTo(0, 0)
+    }
+
+    window.addEventListener('hashchange', handleHashChange)
+    return () => window.removeEventListener('hashchange', handleHashChange)
+  }, [])
 
   const navigate = (p, cert = null) => {
     setPage(p)
     setCertId(cert)
+    window.location.hash = cert ? `/${p}/${cert}` : `/${p}`
     window.scrollTo(0, 0)
   }
 

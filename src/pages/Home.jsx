@@ -288,7 +288,7 @@ export default function Home({ navigate }) {
         <div className="flex-1 max-w-xl">
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
             className="font-mono text-xs text-blue-400 tracking-widest mb-3">
-            // BSc CYBER SECURITY · UEL 2027 · LONDON, UK
+            // BSc CYBER SECURITY & NETWORKS · UEL 2027 · LONDON, UK
           </motion.p>
 
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
@@ -304,9 +304,9 @@ export default function Home({ navigate }) {
 
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45 }}
             className="text-[#6e7681] text-sm leading-relaxed mb-8">
-            BSc (Hons) Cyber Security student at{' '}
+            Final-year BSc (Hons) Cyber Security and Networks student at{' '}
             <span className="text-blue-400 font-semibold">University of East London</span>,
-            building practical experience across phishing detection, SOC analysis, web security, Python, and cloud security.
+            building practical experience across security operations, infrastructure, cloud, data, and software engineering.
           </motion.p>
 
           {/* CTA BUTTONS */}
@@ -347,9 +347,9 @@ export default function Home({ navigate }) {
             className="grid grid-cols-2 gap-3">
             {[
               { icon: '🎯', value: '80+', label: 'TryHackMe Rooms' },
-              { icon: '🕷️', value: '4',   label: 'PortSwigger Labs' },
-              { icon: '🏢', value: '3',   label: 'Job Simulations' },
-              { icon: '🎓', value: '2027', label: 'Expected Graduation' },
+              { icon: '🧩', value: '12',  label: 'Projects & Labs' },
+              { icon: '🏆', value: '2',   label: 'Awards' },
+              { icon: '🎓', value: '2027', label: 'Graduation' },
             ].map((s, i) => (
               <motion.div key={s.label}
                 initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}
