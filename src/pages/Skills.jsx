@@ -51,7 +51,7 @@ export default function Skills() {
         // TECHNICAL SKILLS
       </motion.p>
       <motion.h2 initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-        className="text-4xl font-black text-[#e6edf3] mb-4">
+        className="text-4xl font-black text-[#e5e7eb] mb-4">
         Technical Toolkit
       </motion.h2>
       <p className="max-w-3xl text-sm text-[#8b949e] leading-relaxed mb-10">
@@ -67,7 +67,7 @@ export default function Skills() {
             viewport={{ once: true, margin: '-50px' }}
             transition={{ delay: i * 0.06 }}
             whileHover={{ y: -3, borderColor: 'rgba(59,130,246,0.45)' }}
-            className="p-5 rounded-xl border border-[#0e1f35] bg-[#0d1423] transition-all duration-200"
+            className="p-5 rounded-xl border border-[#1f2937] bg-[#111827] transition-all duration-200"
           >
             <div className="mb-4 inline-flex min-w-11 h-11 items-center justify-center rounded-lg border border-blue-500/25 bg-blue-500/10 px-2 font-mono text-xs font-black text-blue-300">
               {card.mark}

@@ -137,7 +137,7 @@ export default function CertDetail({ certId, navigate }) {
 
   if (!cert) return (
     <div className="max-w-4xl mx-auto px-6 py-28 text-center">
-      <p className="text-[#4b5563] font-mono">Cert not found.</p>
+      <p className="text-[#64748b] font-mono">Cert not found.</p>
       <button onClick={() => navigate('certs')} className="mt-4 text-blue-400 hover:text-blue-300 font-mono text-sm">← Back to Certifications</button>
     </div>
   )
@@ -147,7 +147,7 @@ export default function CertDetail({ certId, navigate }) {
       <motion.button
         initial={{ opacity: 0 }} animate={{ opacity: 1 }}
         onClick={() => navigate('certs')}
-        className="flex items-center gap-2 font-mono text-xs text-[#4b5563] hover:text-blue-400 transition-colors mb-8"
+        className="flex items-center gap-2 font-mono text-xs text-[#64748b] hover:text-blue-400 transition-colors mb-8"
       >
         <ArrowLeft size={14} /> BACK TO CERTIFICATIONS
       </motion.button>
@@ -158,8 +158,8 @@ export default function CertDetail({ certId, navigate }) {
       >
         <span className="text-5xl">{cert.icon}</span>
         <div>
-          <h1 className="text-3xl font-black text-[#e6edf3] mb-1">{cert.title}</h1>
-          <p className="font-mono text-xs text-[#4b5563] mb-3">{cert.meta}</p>
+          <h1 className="text-3xl font-black text-[#e5e7eb] mb-1">{cert.title}</h1>
+          <p className="font-mono text-xs text-[#64748b] mb-3">{cert.meta}</p>
           <span className={`font-mono text-xs px-2 py-1 rounded border ${badge[cert.status]}`}>
             {badgeLabel[cert.status]}
           </span>
@@ -169,7 +169,7 @@ export default function CertDetail({ certId, navigate }) {
       {/* Overview */}
       <motion.div
         initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-        className="mb-8 p-5 rounded-xl border border-[#0e1f35] bg-[#0d1423]"
+        className="mb-8 p-5 rounded-xl border border-[#1f2937] bg-[#111827]"
       >
         <h3 className="font-mono text-xs text-blue-400 tracking-wider mb-3">// OVERVIEW</h3>
         <p className="text-[#8b949e] leading-relaxed">{cert.overview}</p>
@@ -186,11 +186,11 @@ export default function CertDetail({ certId, navigate }) {
             <motion.div
               key={i}
               initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 + i * 0.05 }}
-              className="flex gap-4 p-4 rounded-xl border border-[#0e1f35] bg-[#0d1423] hover:border-blue-500/20 transition-colors"
+              className="flex gap-4 p-4 rounded-xl border border-[#1f2937] bg-[#111827] hover:border-blue-500/20 transition-colors"
             >
               <span className="font-mono text-sm text-blue-400 w-8 shrink-0">{task.num}</span>
               <div>
-                <h4 className="font-semibold text-[#e6edf3] mb-1">{task.title}</h4>
+                <h4 className="font-semibold text-[#e5e7eb] mb-1">{task.title}</h4>
                 <p className="text-sm text-[#8b949e]">{task.desc}</p>
               </div>
             </motion.div>
@@ -201,7 +201,7 @@ export default function CertDetail({ certId, navigate }) {
       {/* Skills */}
       <motion.div
         initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
-        className="p-5 rounded-xl border border-[#0e1f35] bg-[#0d1423]"
+        className="p-5 rounded-xl border border-[#1f2937] bg-[#111827]"
       >
         <h3 className="font-mono text-xs text-blue-400 tracking-wider mb-3">// SKILLS DEMONSTRATED</h3>
         <div className="flex flex-wrap gap-2">

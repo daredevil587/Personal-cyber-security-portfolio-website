@@ -29,7 +29,7 @@ export default function Certifications({ navigate }) {
       </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-        className="text-4xl font-black text-[#e6edf3] mb-10"
+        className="text-4xl font-black text-[#e5e7eb] mb-10"
       >
         Certifications & Simulations
       </motion.h2>
@@ -41,12 +41,12 @@ export default function Certifications({ navigate }) {
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-50px' }} transition={{ delay: i * 0.05 }}
             whileHover={{ scale: 1.02, borderColor: 'rgba(124,58,237,0.5)' }}
             onClick={() => navigate('cert-detail', cert.id)}
-            className="p-5 rounded-xl border border-[#0e1f35] bg-[#0d1423] cursor-pointer transition-all duration-200 flex gap-4 items-start"
+            className="p-5 rounded-xl border border-[#1f2937] bg-[#111827] cursor-pointer transition-all duration-200 flex gap-4 items-start"
           >
             <span className="text-3xl">{cert.icon}</span>
             <div className="min-w-0">
-              <p className="font-semibold text-[#e6edf3] text-sm leading-snug mb-1">{cert.name}</p>
-              <p className="font-mono text-xs text-[#4b5563] mb-2 truncate">{cert.issuer}</p>
+              <p className="font-semibold text-[#e5e7eb] text-sm leading-snug mb-1">{cert.name}</p>
+              <p className="font-mono text-xs text-[#64748b] mb-2 truncate">{cert.issuer}</p>
               <span className={`inline-block font-mono text-xs px-2 py-0.5 rounded border ${badge[cert.status]}`}>
                 {badgeLabel[cert.status]}
               </span>

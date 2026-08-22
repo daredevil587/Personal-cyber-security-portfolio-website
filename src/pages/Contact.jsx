@@ -19,7 +19,7 @@ export default function Contact() {
       </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-        className="text-4xl font-black text-[#e6edf3] mb-4"
+        className="text-4xl font-black text-[#e5e7eb] mb-4"
       >
         Let's Connect
       </motion.h2>
@@ -40,14 +40,14 @@ export default function Contact() {
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
             whileHover={{ scale: 1.02, borderColor: 'rgba(124,58,237,0.5)' }}
-            className="flex items-center gap-4 p-5 rounded-xl border border-[#0e1f35] bg-[#0d1423] transition-all duration-200"
+            className="flex items-center gap-4 p-5 rounded-xl border border-[#1f2937] bg-[#111827] transition-all duration-200"
           >
             <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
               <link.icon size={18} />
             </div>
             <div>
-              <p className="font-mono text-xs text-[#4b5563] tracking-wider">{link.label}</p>
-              <p className="text-sm text-[#e6edf3]">{link.value}</p>
+              <p className="font-mono text-xs text-[#64748b] tracking-wider">{link.label}</p>
+              <p className="text-sm text-[#e5e7eb]">{link.value}</p>
             </div>
           </motion.a>
         ))}

@@ -50,7 +50,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0a0f1a] relative">
+    <div className="min-h-screen bg-transparent relative">
       <div className="blob blob1" />
       <div className="blob blob2" />
       <div className="blob blob3" />

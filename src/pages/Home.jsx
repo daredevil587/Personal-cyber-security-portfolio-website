@@ -90,17 +90,17 @@ function TerminalWindow() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.6 }}
-      className="w-full rounded-xl border border-[#0e1f35] bg-[#0d1423] overflow-hidden shadow-2xl shadow-blue-900/20"
+      className="w-full rounded-xl border border-[#1f2937] bg-[#111827] overflow-hidden shadow-2xl shadow-blue-900/20"
     >
       {/* Title bar */}
-      <div className="flex items-center justify-between px-4 py-2.5 border-b border-[#0e1f35] bg-[#07111e]">
+      <div className="flex items-center justify-between px-4 py-2.5 border-b border-[#1f2937] bg-[#0f172a]">
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-red-500/70" />
           <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
           <div className="w-3 h-3 rounded-full bg-green-500/70" />
         </div>
-        <span className="font-mono text-xs text-[#4b5563]">uttam@kali:~</span>
-        <button onClick={restart} className="font-mono text-xs text-[#4b5563] hover:text-blue-400 transition-colors">
+        <span className="font-mono text-xs text-[#64748b]">uttam@kali:~</span>
+        <button onClick={restart} className="font-mono text-xs text-[#64748b] hover:text-blue-400 transition-colors">
           ↺ replay
         </button>
       </div>
@@ -122,7 +122,7 @@ function TerminalWindow() {
           )
         })}
         {visible.length === 0 && (
-          <p className="text-[#4b5563]">$ waiting for connection...</p>
+          <p className="text-[#64748b]">$ waiting for connection...</p>
         )}
       </div>
     </motion.div>
@@ -142,10 +142,10 @@ function THMBadge() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.7 }}
       whileHover={{ scale: 1.03, borderColor: 'rgba(59,130,246,0.6)' }}
-      className="flex items-center gap-3 p-4 rounded-xl border border-[#0e1f35] bg-[#0d1423] hover:bg-[#0e1a2e] transition-all duration-200 group cursor-pointer"
+      className="flex items-center gap-3 p-4 rounded-xl border border-[#1f2937] bg-[#111827] hover:bg-[#172033] transition-all duration-200 group cursor-pointer"
     >
       {/* THM icon */}
-      <div className="w-10 h-10 rounded-lg bg-[#1c2333] border border-[#0e1f35] flex items-center justify-center shrink-0">
+      <div className="w-10 h-10 rounded-lg bg-[#172033] border border-[#1f2937] flex items-center justify-center shrink-0">
         <svg viewBox="0 0 40 40" width="26" height="26" fill="none">
           <circle cx="20" cy="20" r="18" fill="#212c3b" />
           <path d="M13 20 Q20 10 27 20 Q20 30 13 20Z" fill="#2d9bf0" opacity="0.9"/>
@@ -154,8 +154,8 @@ function THMBadge() {
       </div>
       <div className="min-w-0">
         <p className="font-mono text-xs text-blue-400 tracking-wider">TRYHACKME</p>
-        <p className="text-sm text-[#e6edf3] font-semibold">Pre Security Certificate</p>
-        <p className="font-mono text-xs text-[#4b5563]">THM-SBWU2IRKK5 · Click to verify ↗</p>
+        <p className="text-sm text-[#e5e7eb] font-semibold">Pre Security Certificate</p>
+        <p className="font-mono text-xs text-[#64748b]">THM-SBWU2IRKK5 · Click to verify ↗</p>
       </div>
       <div className="ml-auto shrink-0">
         <span className="font-mono text-xs text-green-400 border border-green-500/30 bg-green-500/10 px-2 py-0.5 rounded">
@@ -250,7 +250,7 @@ function Avatar() {
       <AnimatePresence>
         {!hovered && (
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-            className="absolute -bottom-7 font-mono text-xs text-[#4b5563] tracking-wider">
+            className="absolute -bottom-7 font-mono text-xs text-[#64748b] tracking-wider">
             hover or click me
           </motion.p>
         )}
@@ -274,7 +274,7 @@ export default function Home({ navigate }) {
           className="relative flex-shrink-0 flex flex-col items-center gap-10">
           <motion.div initial={{ opacity: 0, y: -10, scale: 0.9 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ delay: 0.6 }}
             className="relative">
-            <div className="bg-[#07111e]/90 border border-blue-500/50 rounded-2xl px-4 py-2.5 backdrop-blur-sm shadow-lg shadow-blue-900/40">
+            <div className="bg-[#0f172a]/90 border border-blue-500/50 rounded-2xl px-4 py-2.5 backdrop-blur-sm shadow-lg shadow-blue-900/40">
               <p className="font-mono text-sm text-[#93c5fd] whitespace-nowrap">
                 Hello! I Am <span className="text-blue-300 font-bold">Uttam Yadav</span>
               </p>
@@ -322,7 +322,7 @@ export default function Home({ navigate }) {
               <Download size={15} /> DOWNLOAD CV
             </a>
             <button onClick={() => navigate('contact')}
-              className="px-6 py-3 border border-[#0e1f35] hover:border-blue-500/30 text-[#4b5563] hover:text-[#e6edf3] font-mono text-sm tracking-wider rounded-xl transition-all">
+              className="px-6 py-3 border border-[#1f2937] hover:border-blue-500/30 text-[#64748b] hover:text-[#e5e7eb] font-mono text-sm tracking-wider rounded-xl transition-all">
               GET IN TOUCH
             </button>
           </motion.div>
@@ -354,10 +354,10 @@ export default function Home({ navigate }) {
               <motion.div key={s.label}
                 initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}
                 whileHover={{ scale: 1.04 }}
-                className="p-3 rounded-xl border border-[#0e1f35] bg-[#0d1423] text-center cursor-default">
+                className="p-3 rounded-xl border border-[#1f2937] bg-[#111827] text-center cursor-default">
                 <p className="text-lg mb-0.5">{s.icon}</p>
                 <p className="text-lg font-black text-blue-400">{s.value}</p>
-                <p className="font-mono text-xs text-[#4b5563] leading-tight">{s.label}</p>
+                <p className="font-mono text-xs text-[#64748b] leading-tight">{s.label}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -365,7 +365,7 @@ export default function Home({ navigate }) {
       </div>
 
       {/* ── BOTTOM DIVIDER ── */}
-      <div className="max-w-6xl mx-auto w-full border-t border-[#0e1f35] pb-6" />
+      <div className="max-w-6xl mx-auto w-full border-t border-[#1f2937] pb-6" />
     </div>
   )
 }

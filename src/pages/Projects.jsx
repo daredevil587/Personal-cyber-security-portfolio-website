@@ -130,7 +130,7 @@ function ProjectGrid({ projects, navigate }) {
         <motion.article
           key={proj.title}
           whileHover={{ y: -3 }}
-          className="min-w-0 overflow-hidden p-6 rounded-xl border border-[#0e1f35] bg-[#0d1423] hover:border-blue-500/30 transition-all duration-200 flex flex-col"
+          className="min-w-0 overflow-hidden p-6 rounded-xl border border-[#1f2937] bg-[#111827] hover:border-blue-500/30 transition-all duration-200 flex flex-col"
         >
           <div className="flex items-start justify-between gap-3 mb-4">
             <span className="inline-flex min-w-12 h-12 items-center justify-center rounded-lg border border-blue-500/25 bg-blue-500/10 px-2 font-mono text-sm font-black text-blue-300">
@@ -141,7 +141,7 @@ function ProjectGrid({ projects, navigate }) {
             </span>
           </div>
 
-          <h3 className="font-bold text-[#e6edf3] mb-3 text-lg leading-tight">{proj.title}</h3>
+          <h3 className="font-bold text-[#e5e7eb] mb-3 text-lg leading-tight">{proj.title}</h3>
           <p className="break-words text-sm text-[#8b949e] leading-relaxed mb-3">{proj.desc}</p>
           <p className="break-words text-sm text-[#b5c0cf] leading-relaxed mb-4 flex-1">
             <span className="font-mono text-xs text-blue-400">EVIDENCE — </span>{proj.outcome}
@@ -189,7 +189,7 @@ export default function Projects({ navigate }) {
         // PROJECTS
       </motion.p>
       <motion.h2
-        className="text-3xl sm:text-4xl font-black text-[#e6edf3] mb-4">
+        className="text-3xl sm:text-4xl font-black text-[#e5e7eb] mb-4">
         Projects With Proof
       </motion.h2>
       <motion.p
@@ -200,7 +200,7 @@ export default function Projects({ navigate }) {
       <section className="mb-16" aria-labelledby="featured-projects-heading">
         <div className="mb-6">
           <p className="font-mono text-xs tracking-widest text-blue-400 mb-2">01 / FEATURED BUILDS</p>
-          <h3 id="featured-projects-heading" className="text-xl sm:text-2xl font-black text-[#e6edf3]">Public GitHub Projects</h3>
+          <h3 id="featured-projects-heading" className="text-xl sm:text-2xl font-black text-[#e5e7eb]">Public GitHub Projects</h3>
         </div>
         <ProjectGrid projects={featuredProjects} navigate={navigate} />
       </section>
@@ -208,13 +208,13 @@ export default function Projects({ navigate }) {
       <section aria-labelledby="lab-projects-heading">
         <div className="mb-6">
           <p className="font-mono text-xs tracking-widest text-blue-400 mb-2">02 / TECHNICAL LABS</p>
-          <h3 id="lab-projects-heading" className="text-xl sm:text-2xl font-black text-[#e6edf3]">Security, Infrastructure & Database Work</h3>
+          <h3 id="lab-projects-heading" className="text-xl sm:text-2xl font-black text-[#e5e7eb]">Security, Infrastructure & Database Work</h3>
         </div>
         <ProjectGrid projects={labProjects} navigate={navigate} />
       </section>
 
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
-        className="mt-12 p-5 rounded-xl border border-dashed border-[#0e1f35] text-center">
+        className="mt-12 p-5 rounded-xl border border-dashed border-[#1f2937] text-center">
         <p className="mb-3 text-sm text-[#8b949e]">Employer-designed cyber simulations and supporting credentials are documented separately.</p>
         <button onClick={() => navigate('certs')}
           className="inline-flex items-center gap-2 font-mono text-xs text-blue-300 hover:text-blue-200 transition-colors">
